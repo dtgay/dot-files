@@ -8,12 +8,14 @@ set smarttab
 set expandtab
 set softtabstop=4
 
-au BufWritePost *.py !pyflakes % " Check Python code.
-au BufWritePost *.py !pep8 % " Run PEP8 against Python code.
+" Check Python code.
+au BufWritePost *.py !pyflakes %
+" Run PEP8 against Python code.
+au BufWritePost *.py !pep8 %
 
 " Set the color scheme (vividchalk suggested by Qalthos!)
 colorscheme vividchalk
 
 " Be able to paste into Vim without indentation errors using ',ip'
-let mapleader = "," " Just to make sure your leader is a ','
+let mapleader = ","
 map <Leader>ip :set invpaste invnumber invlist<CR>
