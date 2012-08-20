@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="bira"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -37,8 +37,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin:/home/david/bin:/usr/local/sbin:/usr/sbin
 
 # Custom prompt
-setopt PROMPT_SUBST
-source ~/.zsh-prompt
+#setopt PROMPT_SUBST
+#source ~/.zsh-prompt
 
 # Have active env appear in prompt
 source virtualenvwrapper.sh
