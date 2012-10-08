@@ -69,8 +69,8 @@ ${goto 165}${font 6x10:size=7,weight:normal}${color}Swap ${goto 200}$swap
 
 ${voffset 62}
 ${goto 190}${font 6x10:size=12,weight:bold}${color}DISKS
-${goto 185}${font 6x10:size=7,weight:normal}${color}/home${goto 205}${fs_used /home}
-${goto 185}${font 6x10:size=7,weight:normal}${color}/${goto 205}${fs_used /}
+${goto 180}${font 6x10:size=7,weight:normal}${color}/home${goto 215}${fs_used /home}
+${goto 180}${font 6x10:size=7,weight:normal}${color}/${goto 215}${fs_used /}
 
 ${voffset -90}
 ${goto 5}${color3}TOP CPU
