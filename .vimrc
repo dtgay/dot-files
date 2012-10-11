@@ -19,3 +19,6 @@ colorscheme vividchalk
 " Be able to paste into Vim without indentation errors using ',ip'
 let mapleader = ","
 map <Leader>ip :set invpaste invnumber invlist<CR>
+
+" Map ;; -> <Esc>
+imap ;; <Esc>
