@@ -5,6 +5,7 @@ set autoindent
 set tabstop=4
 set shiftwidth=4
 set smarttab
+set smarttab
 set expandtab
 set softtabstop=4
 
@@ -21,4 +22,7 @@ let mapleader = ","
 map <Leader>ip :set invpaste invnumber invlist<CR>
 
 " Map ;; -> <Esc>
-imap ;; <Esc>
+imap ii <Esc>
+
+" Transparent bacjground
+color transparent

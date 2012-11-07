@@ -93,8 +93,8 @@ myawesomemenu = {
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "web", "firefox"},
                                     { "terminal", terminal },
-                                    { "suspend", "pm-suspend" },
-                                    { "lock", "xlock" }
+                                    { "suspend", "sudo pm-suspend" },
+                                    { "lock", "xscreensaver-command -lock" }
                                   }
                         })
 
@@ -206,7 +206,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
-    awful.key({ modkey,           }, "F12", function () awful.util.spawn("xscreensaver") end),
+    awful.key({ modkey,           }, "F11", function () awful.util.spawn("import screenie.png") end),
 
     awful.key({ modkey,           }, "j",
         function ()
@@ -228,6 +228,8 @@ globalkeys = awful.util.table.join(
    awful.key({ }, "XF86AudioMute", function ()
        awful.util.spawn("amixer sset Master toggle") end),
 
+    -- Power and brightness
+    -- awful.util.spawn("mate-power-manager"),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
@@ -243,14 +245,6 @@ globalkeys = awful.util.table.join(
             end
         end),
     
-    -- Volume controls
-    -- awful.key({ }, "XF86AudioRaiseVolume", function()
-    --    awful.util.spawn("amixer set Maseter 9%+") end),
-    -- awful.key({ }, "XF86AudioLowerVolume", function ()
-    --    awful.util.spawn("amixer set Master 9%-") end),
-    -- awful.key({ }, "XF86AudioMute", function ()
-    --    awful.util.spawn("amixer sset Master toggle") end),
-
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
@@ -401,17 +395,23 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
--- PROGRAM AUTOSTARTS
---awful.util.spawn_with_shell("hotot");
---awful.util.spawn_with_shell("pidgin");
-awful.util.spawn_with_shell("nm-applet");
-
--- Function for NASA image of the day
-function run_once(prg)
+function run_once(prg,arg_string,pname,screen)
     if not prg then
         do return nil end
     end
-    awful.util.spawn_with_shell("pgrep -f -u $USER -x " .. prg .. " || (" .. prg .. ")")
+
+    if not pname then
+        pname = prg
+    end
+
+    if not arg_string then 
+        awful.util.spawn_with_shell("pgrep -f -u $USER -x '" .. pname .. "' || (" .. prg .. ")",screen)
+    else
+        awful.util.spawn_with_shell("pgrep -f -u $USER -x '" .. pname .. "' || (" .. prg .. " " .. arg_string .. ")",screen)
+    end
 end
 
-run_once("sh /home/david/scripts/nasa_background.sh")
+run_once("xscreensaver", "-no-splash") -- screensaver daemon
+run_once(os.getenv("HOME") .. "/.dropbox-dist/dropboxd") -- dropbox
+run_once("nm-applet") -- networking manager applet
+run_once("hotot") -- twitter client

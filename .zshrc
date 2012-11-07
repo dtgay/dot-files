@@ -5,7 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira"
+#ZSH_THEME="nicoulaj"
+#ZSH_THEME="kardan"
+ZSH_THEME="terminalparty"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -41,4 +43,13 @@ export PATH=/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin
 #source ~/.zsh-prompt
 
 # Have active env appear in prompt
-source virtualenvwrapper.sh
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/bin/virtualenvwrapper.sh
+
+# Set up Java for JDBC driver
+export JAVA_HOME=/usr/java/jre1.7.0_07
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Add scripts directory to path
+export PATH=$PATH:$HOME/scripts
