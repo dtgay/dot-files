@@ -53,3 +53,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 # Add scripts directory to path
 export PATH=$PATH:$HOME/scripts
+export PATH
