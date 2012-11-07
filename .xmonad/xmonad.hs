@@ -17,6 +17,7 @@ import System.IO
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar /home/david/.xmobarrc"
     wallpaper <- spawnPipe "/usr/bin/awsetbg /home/david/Dropbox/Pictures/wallpapers/field_sun_glow.jpg"
+    dropboxd <- spawnPipe "/home/david/.dropbox-dist/dropboxd"
     xmonad $ defaultConfig
         { terminal = "mate-terminal"
         , borderWidth = 2
