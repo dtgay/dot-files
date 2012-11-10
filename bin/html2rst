@@ -14,8 +14,10 @@ do
     echo "Converting $f to RST"
     new_file_name=${f:0:${#f}-4}rst
     content=$(sed -n '/re/,$p' $f)
-    diff -a <(cat $f) <(sed -n '/re/,$p' $f) | sed 's/<//' | sed -n '1!p' > $new_file_name
+    diff -a <(cat $f) <(sed -n '/re/,$p' $f) | sed 's/<//' \
+                            | sed -n '1!p' > $new_file_name
     # remove leading whitespace from file
     sed "s/^[ \t]*//" -i $new_file_name
+    echo "" >> $new_file_name
     pandoc --from=html --to=rst <(sed -n '/re/,$p' $f) >> $new_file_name
 done
