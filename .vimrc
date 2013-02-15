@@ -1,28 +1,23 @@
-" This is a must!
+syntax on
+
 set autoindent
 
-" Awesome indentation stuff: 4 spaces instead of a tab, all handled perfectly!
 set tabstop=4
 set shiftwidth=4
-set smarttab
 set smarttab
 set expandtab
 set softtabstop=4
 
-" Check Python code.
-au BufWritePost *.py !pyflakes %
-" Run PEP8 against Python code.
-au BufWritePost *.py !pep8 %
-
-" Set the color scheme (vividchalk suggested by Qalthos!)
-colorscheme vividchalk
-
-" Be able to paste into Vim without indentation errors using ',ip'
-let mapleader = ","
-map <Leader>ip :set invpaste invnumber invlist<CR>
-
-" Map ;; -> <Esc>
 imap ii <Esc>
 
-" Transparent bacjground
-color transparent
+colorscheme vividchalk
+
+" shortcut to toggle set paste (Control-P)
+nmap <C-p> :set paste!<CR>
+
+" hilight bad whitespace (for Python)
+highlight BadWhitespace ctermbg=red guibg=red
+au BufRead,BufNewFile *.rst match BadWhitespace /*\t\*/
+au BufRead,BufNewFile *.rst match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py match BadWhitespace /*\t\*/
+au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
