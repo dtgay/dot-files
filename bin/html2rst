@@ -6,7 +6,8 @@
 # Thanks to sublimepua for helping with sed
 
 # ATTENTION: Keep your HTML files until you're sure the blog builds how you
-# want it to. I had to fix quite a few files. Probably imperfect HTML files.
+# want it to. I had to fix quite a few files. Might have been imperfect
+# HTML, but it could be a bug in my code.
 
 shopt -s nullglob
 for f in *.html
