@@ -5,9 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="nicoulaj"
-#ZSH_THEME="kardan"
-ZSH_THEME="terminalparty"
+ZSH_THEME="sunrise"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -16,8 +14,11 @@ ZSH_THEME="terminalparty"
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable weekly auto-update checks
+# Comment this out to disable bi-weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
+
+# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
 # Uncomment following line if you want to disable colors in ls
 # DISABLE_LS_COLORS="true"
@@ -36,21 +37,12 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/lib64/qt-3.3/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/bin:/home/david/bin:/usr/local/sbin:/usr/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/oddshocks/.local/bin:/home/oddshocks/bin
 
-# Custom prompt
-#setopt PROMPT_SUBST
-#source ~/.zsh-prompt
-
-# Have active env appear in prompt
+# Enable virtualenv wrapper by adding to path
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
+export PROJECT_HOME=$HOME/devel
 source /usr/bin/virtualenvwrapper.sh
 
-# Set up Java for JDBC driver
-export JAVA_HOME=/usr/java/jre1.7.0_07
-export PATH=$JAVA_HOME/bin:$PATH
-
-# Add scripts directory to path
-export PATH=$PATH:$HOME/scripts
-export PATH
+# Those aliases, dogg
+alias psd='python setup.py develop'
