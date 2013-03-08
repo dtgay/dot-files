@@ -46,3 +46,4 @@ source /usr/bin/virtualenvwrapper.sh
 
 # Those aliases, dogg
 alias psd='python setup.py develop'
+alias tp='trash-put'
