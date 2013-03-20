@@ -8,7 +8,7 @@ set smarttab
 set expandtab
 set softtabstop=4
 
-imap ii <Esc>
+imap jj <Esc>
 
 colorscheme vividchalk
 
@@ -26,3 +26,6 @@ au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
 " Read this to set up (easy):
 " http://www.vim.org/scripts/script.php?script_id=2914
 au BufWritePost *.py !pep8 %
+
+" Line numbers
+set number
