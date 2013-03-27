@@ -10,7 +10,8 @@ set softtabstop=4
 
 imap jj <Esc>
 
-colorscheme vividchalk
+"colorscheme vividchalk
+colorscheme transparent
 
 " shortcut to toggle set paste (Control-P)
 nmap <C-p> :set paste!<CR>
