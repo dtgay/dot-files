@@ -30,8 +30,10 @@ chatnets = {
 #THIS SECTION DEALS WITH THE CHANNELS THAT YOU WANT TO JOIN ON CONNECT
 channels = (
   { name = "#rit-foss"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#gnu"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#fsf"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#ritlug"; chatnet = "freenode"; autojoin = "yes"; },
   { name = "#rocpy"; chatnet = "freenode"; autojoin = "yes"; },
-  { name = "#lovebox"; chatnet = "freenode"; autojoin = "yes"; },
 );
 
 #THIS SECTION DEALS WITH YOUR STATUSBAR - DO NOT CHANGE THIS UNLESS YOU ARE SURE WHAT YOU ARE DOING
