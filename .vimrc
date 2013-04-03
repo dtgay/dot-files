@@ -29,4 +29,4 @@ au BufRead,BufNewFile *.py match BadWhitespace /\s\+$/
 au BufWritePost *.py !pep8 %
 
 " Line numbers
-set number
+"set number
