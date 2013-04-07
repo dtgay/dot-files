@@ -48,5 +48,6 @@ source /usr/bin/virtualenvwrapper.sh
 # Those aliases, dogg
 alias psd='python setup.py develop'
 alias tp='trash-put'
+alias gpr='git push --rebase'
 
 setopt nobeep # stop beeping at me

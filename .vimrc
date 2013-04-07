@@ -30,3 +30,6 @@ au BufWritePost *.py !pep8 %
 
 " Line numbers
 "set number
+
+" Get rid of beeping in vim
+set vb
