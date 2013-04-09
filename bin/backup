@@ -1,0 +1,3 @@
+#!/usr/bin/sh
+
+bup save -n wilfred -r oddshocks@also2.rit.edu: Documents Pictures bin
