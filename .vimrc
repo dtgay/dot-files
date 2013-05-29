@@ -33,3 +33,10 @@ au BufWritePost *.py !pep8 %
 
 " Get rid of beeping in vim
 set vb
+
+" Stuff for golang syntax hilighting
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
