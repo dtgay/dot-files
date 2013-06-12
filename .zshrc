@@ -8,10 +8,6 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="sunrise"
 ZSH_THEME="terminalparty"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -27,7 +23,8 @@ ZSH_THEME="terminalparty"
 # Uncomment following line if you want to disable autosetting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
+# Uncomment following line if you want red dots to be displayed while waiting
+# for completion
 # COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -68,3 +65,15 @@ export GOBIN=$GOROOT/bin
 export GOARCH=amd64
 export GOOS=linux
 export PATH=$GOBIN:$PATH
+
+# Fortune
+if [ $(which fortune) ] # if fortune is installed (fortune-mod pkg. in Fedora)
+then 
+    if [ $(which cowsay) ]
+    then
+        fortune -a | cowsay # moo
+    else
+        
+        fortune -a # display a fortune from all available maxims
+    fi
+fi
