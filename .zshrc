@@ -44,6 +44,7 @@ source /usr/bin/virtualenvwrapper.sh
 
 # Those aliases, dogg
 alias psd='python setup.py develop'
+alias psi='python setup.py install'
 alias tp='trash-put'
 alias gpr='git push --rebase'
 alias :q=exit # lol
