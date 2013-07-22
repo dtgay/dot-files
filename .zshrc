@@ -45,6 +45,7 @@ source /usr/bin/virtualenvwrapper.sh
 # Those aliases, dogg
 alias psd='python setup.py develop'
 alias psi='python setup.py install'
+alias pst='python setup.py test'
 alias tp='trash-put'
 alias gpr='git push --rebase'
 alias :q=exit # lol
@@ -72,9 +73,9 @@ if [ $(which fortune) ] # if fortune is installed (fortune-mod pkg. in Fedora)
 then 
     if [ $(which cowsay) ]
     then
-        fortune -a | cowsay # moo
+        #fortune -a | cowsay # moo
     else
         
-        fortune -a # display a fortune from all available maxims
+        #fortune -a # display a fortune from all available maxims
     fi
 fi
