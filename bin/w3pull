@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wget -nc -k -r -np 

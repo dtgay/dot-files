@@ -1,0 +1,4 @@
+#!/bin/bash
+
+NEXT=$(~/bin/get_next_task)
+task $NEXT mod wait:30minutes

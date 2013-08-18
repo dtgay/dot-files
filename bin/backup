@@ -1,3 +1,9 @@
 #!/usr/bin/sh
 
-bup save -n wilfred -r oddshocks@also2.rit.edu: Documents Pictures bin
+# bup is weird
+#bup save -n wilfred -r oddshocks@also2.rit.edu: Documents Pictures bin
+
+# simple backup using rsync
+rsync -r /home/oddshocks/bin        yacht.rit.edu:backup/
+rsync -r /home/oddshocks/Documents  yacht.rit.edu:backup/
+rsync -r /home/oddshocks/Pictures   yacht.rit.edu:backup/
