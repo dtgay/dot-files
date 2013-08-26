@@ -49,6 +49,8 @@ alias pst='python setup.py test'
 alias tp='trash-put'
 alias gpr='git push --rebase'
 alias :q=exit # lol
+alias sch='cat /home/oddshocks/sched.txt | less'
+alias no='yes n' # double lol
 
 setopt nobeep # stop beeping at me
 
@@ -78,4 +80,15 @@ then
         
         #fortune -a # display a fortune from all available maxims
     fi
+fi
+
+# TMUX
+if which tmux 2>&1 >/dev/null; then
+    # if no session is started, start a new session
+    test -z ${TMUX} && tmux
+
+    # when quitting tmux, try to attach
+    while test -z ${TMUX}; do
+        tmux attach || break
+    done
 fi
