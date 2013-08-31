@@ -51,6 +51,7 @@ alias gpr='git push --rebase'
 alias :q=exit # lol
 alias sch='cat /home/oddshocks/sched.txt | less'
 alias no='yes n' # double lol
+alias tomo='task due.before:2days'
 
 setopt nobeep # stop beeping at me
 
