@@ -7,3 +7,4 @@
 rsync -r /home/oddshocks/bin        yacht.rit.edu:backup/
 rsync -r /home/oddshocks/Documents  yacht.rit.edu:backup/
 rsync -r /home/oddshocks/Pictures   yacht.rit.edu:backup/
+rsync -r /home/oddshocks/devel      yacht.rit.edu:backup/
