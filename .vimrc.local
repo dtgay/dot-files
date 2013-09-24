@@ -1,0 +1,4 @@
+set background=dark
+colorscheme solarized
+inoremap jj <Esc>
+set mouse-=a

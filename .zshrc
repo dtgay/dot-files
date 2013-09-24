@@ -49,9 +49,9 @@ alias pst='python setup.py test'
 alias tp='trash-put'
 alias gpr='git push --rebase'
 alias :q=exit # lol
-alias sch='cat /home/oddshocks/sched.txt | less'
 alias no='yes n' # double lol
-alias tomo='task due.before:2days'
+alias tomo='task due.before:1days'
+alias soon='task due.before:3days'
 
 setopt nobeep # stop beeping at me
 
@@ -66,6 +66,7 @@ xinput set-prop "TPPS/2 IBM TrackPoint" "Evdev Middle Button Timeout" 50
 
 # Golang
 export GOROOT=$HOME/go
+export GOPATH=$HOME/devel/go
 export GOBIN=$GOROOT/bin
 export GOARCH=amd64
 export GOOS=linux
