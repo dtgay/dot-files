@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+from __future__ import print_function
+from pprint import pprint as print
+import pip
+
+def get_all_package_dependencies():
+    """Return dictionary of installed packages to list of package dependencies."""
+    return {
+        dist.key: [(r.key, r.specs) for r in dist.requires()]
+        for dist in pip.get_installed_distributions()
+    }
+
+print(get_all_package_dependencies())
