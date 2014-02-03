@@ -34,3 +34,6 @@ set number
 
 " Don't beep at me
 set vb
+
+" For syntax highlighting, treat .md as markdown, not modula
+au BufRead,BufNewFile *.md set filetype=markdown
