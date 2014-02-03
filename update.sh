@@ -6,3 +6,5 @@ for file in "${FILES[@]}"
 do
     cp -r $file ~/dot-files/
 done
+
+cp -r ~/bin/* ~/dot-files/bin/
