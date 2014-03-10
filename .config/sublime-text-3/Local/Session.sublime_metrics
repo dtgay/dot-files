@@ -1,0 +1,17 @@
+{
+	"licensed": false,
+	"packages":
+	[
+		"BracketHighlighter",
+		"GitGutter",
+		"Package Control",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes"
+	],
+	"startup_sec": 0.224037,
+	"syntax":
+	{
+		"Python": 4
+	},
+	"time": 1394380049
+}

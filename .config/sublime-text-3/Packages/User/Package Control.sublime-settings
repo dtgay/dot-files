@@ -1,0 +1,11 @@
+{
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"GitGutter",
+		"Jedi - Python autocompletion",
+		"SublimeLinter",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes"
+	]
+}

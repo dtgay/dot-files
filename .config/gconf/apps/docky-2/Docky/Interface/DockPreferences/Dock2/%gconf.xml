@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="ZoomEnabled" mtime="1394408301" type="bool" value="true"/>
+	<entry name="IndicateMultipleWindows" mtime="1394408301" type="bool" value="true"/>
+	<entry name="HotAreaPadding" mtime="1394408301" type="int" value="24"/>
+	<entry name="FadeOpacity" mtime="1394408301" type="float" value="0"/>
+	<entry name="MonitorNumber" mtime="1394408301" type="int" value="0"/>
+	<entry name="ThreeDimensional" mtime="1394408301" type="bool" value="false"/>
+	<entry name="FadeOnHide" mtime="1394408301" type="bool" value="false"/>
+	<entry name="IconSize" mtime="1394408301" type="int" value="48"/>
+	<entry name="ZoomPercent" mtime="1394408301" type="float" value="2"/>
+	<entry name="PanelMode" mtime="1394408272" type="bool" value="true"/>
+	<entry name="WindowManager" mtime="1394408301" type="bool" value="false"/>
+	<entry name="Position" mtime="1394408267" type="string">
+		<stringvalue>Top</stringvalue>
+	</entry>
+	<entry name="Autohide" mtime="1394408301" type="string">
+		<stringvalue>None</stringvalue>
+	</entry>
+	<entry name="SortList" mtime="1394408301" type="list" ltype="string">
+	</entry>
+	<entry name="Plugins" mtime="1394408301" type="list" ltype="string">
+	</entry>
+	<entry name="Launchers" mtime="1394408301" type="list" ltype="string">
+	</entry>
+</gconf>

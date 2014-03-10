@@ -1,3 +1,6 @@
+" Enable syntax highlighting
+syntax on
+
 " Autoindent
 set autoindent
 
@@ -22,9 +25,6 @@ hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Colour scheme
 colorscheme pablo
-
-" Syntax highlighting
-syntax on
 
 " Shortcut to toggle :set paste (Control-P)
 noremap <C-p> :set paste!<CR>
