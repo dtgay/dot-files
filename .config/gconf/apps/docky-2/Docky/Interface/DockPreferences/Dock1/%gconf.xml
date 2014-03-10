@@ -47,7 +47,7 @@
 			<stringvalue>BatteryMonitor</stringvalue>
 		</li>
 	</entry>
-	<entry name="Launchers" mtime="1394471795" type="list" ltype="string">
+	<entry name="Launchers" mtime="1394472419" type="list" ltype="string">
 		<li type="string">
 			<stringvalue>file:///usr/share/applications/firefox.desktop</stringvalue>
 		</li>
