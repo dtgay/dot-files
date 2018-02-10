@@ -1,11 +1,17 @@
 " Enable syntax highlighting
 syntax on
 
-" Autoindent
+" Enable autoindent
 set autoindent
 
 " Map jj to the escape key
 inoremap jj <Esc>
+
+" Show line numbers
+set number
+
+" Highlight the current line
+hi CursorLine term=bold cterm=bold guibg=Grey40
 
 " Turn off mouse functionality
 set mouse-=a
@@ -13,27 +19,9 @@ set mouse-=a
 " 4 line scroll offset
 set scrolloff=4
 
-" 4 spaces instead of tabs
-set tabstop=4
-set shiftwidth=4
-set smarttab
-set expandtab
-set softtabstop=4
-
-" Highlight current line.
-hi CursorLine term=bold cterm=bold guibg=Grey40
-
-" Colour scheme
-colorscheme pablo
-
-" Shortcut to toggle :set paste (Control-P)
-noremap <C-p> :set paste!<CR>
-
-" Show line numbers
-set number
-
 " Don't beep at me
 set vb
 
-" For syntax highlighting, treat .md as markdown, not modula
-au BufRead,BufNewFile *.md set filetype=markdown
+" Enable powerline fonts
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+set laststatus=2

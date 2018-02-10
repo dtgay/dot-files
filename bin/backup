@@ -1,6 +1,0 @@
-#!/bin/bash
-
-server="oddshocks@someserver:~/backup/"
-
-# Backup all gpg-encrypted files to servers.
-scp /home/oddshocks/backup/*.gpg $server

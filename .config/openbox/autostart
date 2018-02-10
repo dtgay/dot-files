@@ -1,6 +1,0 @@
-## Caps as control
-
-setxkbmap -option ctrl:nocaps
-
-## Compositing
-xcompmgr -n

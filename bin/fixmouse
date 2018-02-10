@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-xinput --set-prop "HP Mouse HP Mouse" "Device Accel Constant Deceleration" 1
- 
-xinput --set-prop "HP Mouse HP Mouse" "Device Accel Velocity Scaling" 1

@@ -1,11 +1,11 @@
 #!/bin/sh
 
-FILES=( ~/.gmrunrc ~/.zshrc ~/.zsh_profile ~/.bashrc ~/.bash_profile ~/.tmux.conf ~/.vimrc ~/.weechat/ )
+FILES=( ~/.zshrc ~/.vimrc ~/.tmux.conf )
 
 for file in "${FILES[@]}"
 do
-    cp -r $file ~/repos/dot-files/
+    cp -r $file ~/Devel/dot-files/
 done
 
-cp -r ~/bin/* ~/repos/dot-files/bin/
-cp -r ~/.config/* ~/repos/dot-files/.config/
+cp -r ~/bin/* ~/Devel/dot-files/bin/
+cp -r ~/.config/* ~/Devel/dot-files/.config/
