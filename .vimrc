@@ -19,9 +19,21 @@ set mouse-=a
 " 4 line scroll offset
 set scrolloff=4
 
+" Scroll 5 lines using up and down keys
+noremap <Up> 5k
+noremap <Down> 5j
+
 " Don't beep at me
 set vb
 
 " Enable powerline fonts
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-set laststatus=2
+"source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+"set laststatus=2
+
+" Make backspace work 'like normal' (start, eol, and indents)
+set backspace=indent,eol,start
+
+" vimwiki prereqs
+set nocompatible
+filetype plugin on
+syntax on

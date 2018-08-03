@@ -95,3 +95,19 @@ source $ZSH/oh-my-zsh.sh
 
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /Users/david/.bash_profile
+
+# Personal aliases
+alias c='clear'
+alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
+
+# Taskwarrior aliases
+alias tt='task due:today'
+alias to='task overdue'
+alias tw='task proj:k'
+alias tl='task ls'
+
+# Use vi mode in the shell
+bindkey -v
+bindkey -M vicmd '/' history-incremental-search-backward
