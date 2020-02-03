@@ -11,7 +11,9 @@ inoremap jj <Esc>
 set number
 
 " Highlight the current line
-hi CursorLine term=bold cterm=bold guibg=Grey40
+set cursorline
+hi CursorLine cterm=NONE ctermbg=235
+hi CursorLineNr term=bold cterm=bold ctermfg=075
 
 " Turn off mouse functionality
 set mouse-=a
