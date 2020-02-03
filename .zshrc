@@ -33,8 +33,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source /Users/david/.bash_profile
-
 # Personal aliases
 alias c='clear'
 alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
@@ -42,3 +40,6 @@ alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
 # Use vi mode in the shell
 bindkey -v
 bindkey -M vicmd '/' history-incremental-search-backward
+
+# Rbenv init
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
