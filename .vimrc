@@ -40,3 +40,18 @@ syntax on
 
 " Keeps at least three lines visibile at the top and bottom of screen
 set scrolloff=3
+
+" START vim-plug
+call plug#begin()
+Plug 'preservim/nerdtree'
+call plug#end()
+" END vim-plug
+
+" START NERDTree
+map <C-n> :NERDTreeToggle<CR>
+" Switch between different windows by their direction`
+no <C-j> <C-w>j| "switching to below window
+no <C-k> <C-w>k| "switching to above window
+no <C-l> <C-w>l| "switching to right window
+no <C-h> <C-w>h| "switching to left window
+" END NERDTree
