@@ -43,3 +43,16 @@ bindkey -M vicmd '/' history-incremental-search-backward
 
 # Rbenv init
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Powerlevel9k
+POWERLEVEL9K_MODE='nerdfont-complete'
+source  ~/Scripts/powerlevel9k/powerlevel9k.zsh-theme
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh dir rbenv vcs newline status)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_RBENV_PROMPT_ALWAYS_SHOW="true"
+
+# colorls
+source $(dirname $(gem which colorls))/tab_complete.sh
+alias ls='colorls --sd'
+alias ll='colorls -lA --sd'
