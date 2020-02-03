@@ -37,3 +37,6 @@ set backspace=indent,eol,start
 set nocompatible
 filetype plugin on
 syntax on
+
+" Keeps at least three lines visibile at the top and bottom of screen
+set scrolloff=3
