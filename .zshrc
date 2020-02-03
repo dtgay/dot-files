@@ -102,12 +102,6 @@ source /Users/david/.bash_profile
 alias c='clear'
 alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
 
-# Taskwarrior aliases
-alias tt='task due:today'
-alias to='task overdue'
-alias tw='task proj:k'
-alias tl='task ls'
-
 # Use vi mode in the shell
 bindkey -v
 bindkey -M vicmd '/' history-incremental-search-backward
