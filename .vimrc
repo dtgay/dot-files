@@ -10,6 +10,9 @@ inoremap jj <Esc>
 " Show line numbers
 set number
 
+" Set line length to 80 characters
+set textwidth=80
+
 " Highlight the current line
 set cursorline
 hi CursorLine cterm=NONE ctermbg=235
