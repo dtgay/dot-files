@@ -46,6 +46,17 @@ syntax on
 " Keeps at least three lines visibile at the top and bottom of screen
 set scrolloff=3
 
+" Insert two spaces upon pressing tab
+set expandtab
+" Show existing tabs with 2 spaces width
+set tabstop=2
+set softtabstop=2
+" When indenting with '>', use 2 spaces width
+set shiftwidth=2
+
+" Fenced code block syntax highlighting in md files
+let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=javascript', 'json=javascript']
+
 " START vim-plug
 call plug#begin()
 Plug 'preservim/nerdtree'
