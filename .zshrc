@@ -13,16 +13,11 @@ export ZSH=/Users/david/.oh-my-zsh
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
 plugins=(
   git
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -30,9 +25,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
 fi
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Personal aliases
 alias c='clear'
