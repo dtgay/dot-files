@@ -44,6 +44,10 @@ syntax on
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
+" Show ruler at column 80
+set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 " Keeps at least three lines visibile at the top and bottom of screen
 set scrolloff=3
 
