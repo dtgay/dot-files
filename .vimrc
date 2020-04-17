@@ -40,6 +40,10 @@ set nocompatible
 filetype plugin on
 syntax on
 
+" vimwiki - use markdown
+let g:vimwiki_list = [{'path': '~/vimwiki/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+
 " Keeps at least three lines visibile at the top and bottom of screen
 set scrolloff=3
 
@@ -57,6 +61,7 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=java
 " START vim-plug
 call plug#begin()
 Plug 'preservim/nerdtree'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 " END vim-plug
 
