@@ -48,7 +48,7 @@ filetype plugin on
 syntax on
 
 " vimwiki - use markdown
-let g:vimwiki_list = [{'path': '~/vimwiki/',
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " Show ruler at column 80
