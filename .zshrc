@@ -36,7 +36,7 @@ alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
 
 # Move things to the trash rather than deleting them, and train
 # myself not to use rm. (requires rmtrash to be installed)
-alias del="rmtrash"
+alias del="trash"
 alias rm="echo Use 'del' or '/bin/rm'"
 
 # Use vi mode in the shell
