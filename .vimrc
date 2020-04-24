@@ -9,6 +9,7 @@ inoremap jj <Esc>
 
 " Show line numbers
 set number
+set relativenumber
 " Hide line numbers in markdown files
 "autocmd filetype markdown setlocal nonumber
 
