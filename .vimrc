@@ -80,6 +80,7 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=java
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
+"Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
 " END vim-plug
 
