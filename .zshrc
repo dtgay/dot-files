@@ -39,6 +39,9 @@ alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
 alias del="trash"
 alias rm="echo Use 'del' or '/bin/rm'"
 
+# Use nvim instead of vim
+alias vim="nvim"
+
 # Use vi mode in the shell
 bindkey -v
 bindkey -M vicmd '/' history-incremental-search-backward
