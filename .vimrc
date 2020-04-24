@@ -80,10 +80,16 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=java
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'vimwiki/vimwiki'
+Plug 'morhetz/gruvbox'
 "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
 " END vim-plug
 
-" START NERDTree
+" NERDTree shortcut
 map <C-n> :NERDTreeToggle<CR>
-" END NERDTree
+
+" Color scheme
+colorscheme gruvbox
+
+" True color support
+set termguicolors
