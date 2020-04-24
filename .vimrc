@@ -58,6 +58,12 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 " Keeps at least three lines visibile at the top and bottom of screen
 set scrolloff=3
 
+" Switch between different windows by their direction`
+no <C-j> <C-w>j| "switching to below window
+no <C-k> <C-w>k| "switching to above window
+no <C-l> <C-w>l| "switching to right window
+no <C-h> <C-w>h| "switching to left window
+
 " Insert two spaces upon pressing tab
 set expandtab
 " Show existing tabs with 2 spaces width
@@ -78,9 +84,4 @@ call plug#end()
 
 " START NERDTree
 map <C-n> :NERDTreeToggle<CR>
-" Switch between different windows by their direction`
-no <C-j> <C-w>j| "switching to below window
-no <C-k> <C-w>k| "switching to above window
-no <C-l> <C-w>l| "switching to right window
-no <C-h> <C-w>h| "switching to left window
 " END NERDTree
