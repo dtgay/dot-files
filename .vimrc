@@ -10,7 +10,7 @@ inoremap jj <Esc>
 " Show line numbers
 set number
 " Hide line numbers in markdown files
-autocmd filetype markdown setlocal nonumber
+"autocmd filetype markdown setlocal nonumber
 
 " Highlight the current line
 set cursorline
