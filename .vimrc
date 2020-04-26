@@ -1,6 +1,9 @@
 " Enable syntax highlighting
 syntax on
 
+" Disable word wrap
+set nowrap
+
 " Enable autoindent
 set autoindent
 
