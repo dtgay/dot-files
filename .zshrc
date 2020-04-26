@@ -1,6 +1,6 @@
 # Connect to a detached tmux session if one exists, otherwise start a new one.
 # Close the window when the session is exited.
-[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
+#[ -z "$TMUX"  ] && { tmux attach || exec tmux new-session && exit;}
 
 # Enable Powerlevel11k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
