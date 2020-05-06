@@ -7,8 +7,9 @@ set nowrap
 " Enable autoindent
 set autoindent
 
-" Map jj to the escape key
-inoremap jj <Esc>
+" Map jk and kj to the escape key
+inoremap jk <Esc>
+inoremap kj <Esc>
 
 " Show line numbers
 set number
