@@ -56,10 +56,6 @@ set nocompatible
 filetype plugin on
 syntax on
 
-" vimwiki - use markdown
-let g:vimwiki_list = [{'path': '~/Documents/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-
 " Show ruler at column 80
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
@@ -87,7 +83,6 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=java
 " START vim-plug
 call plug#begin()
 Plug 'preservim/nerdtree'
-Plug 'vimwiki/vimwiki'
 Plug 'morhetz/gruvbox'
 "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
