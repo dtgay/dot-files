@@ -38,8 +38,8 @@ autocmd filetype markdown set syntax=markdown
 
 " By pressing F3, insert a bolded current time in 24 hour format, followed
 " by a hyphen, for beginning a log entry
-nmap <F3> i*<C-R>=strftime("%H:%M")<CR>* -
-imap <F3> *<C-R>=strftime("%H:%M")<CR>* - 
+nmap <F3> i**<C-R>=strftime("%H:%M")<CR>** -
+imap <F3> **<C-R>=strftime("%H:%M")<CR>** - 
 
 " Don't beep at me
 set vb
