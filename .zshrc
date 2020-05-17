@@ -23,11 +23,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Preferred editor for local and remote sessions
+# Preferred editor for remote and local sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # Personal aliases
