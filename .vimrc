@@ -38,8 +38,12 @@ autocmd filetype markdown set syntax=markdown
 
 " By pressing F3, insert a bolded current time in 24 hour format, followed
 " by a hyphen, for beginning a log entry
-nmap <F3> i**<C-R>=strftime("%H:%M")<CR>** -
-imap <F3> **<C-R>=strftime("%H:%M")<CR>** - 
+nnoremap <silent> <F9> i**<C-R>=strftime("%H:%M")<CR>** -
+inoremap <silent> <F9> **<C-R>=strftime("%H:%M")<CR>** - 
+
+" notiational-fzf-vim config
+let g:nv_search_paths = ['~/Documents/Notes']
+noremap <silent> <F3> :NV<CR>
 
 " Don't beep at me
 set vb
@@ -84,6 +88,8 @@ let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=java
 call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'https://github.com/alok/notational-fzf-vim'
 "Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 call plug#end()
 " END vim-plug
