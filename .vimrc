@@ -32,6 +32,11 @@ set scrolloff=4
 noremap <Up> 5k
 noremap <Down> 5j
 
+" Remember previous position in file when reopening it
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
 " Set markdown syntax highlighting for *.md files
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 autocmd filetype markdown set syntax=markdown
