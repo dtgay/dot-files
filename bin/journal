@@ -12,6 +12,13 @@
 # abort on errors
 set -e
 
-journal_dir="~/Documents/Notes/journal"
+journal_dir="/Users/david/Documents/Notes/journal"
 date=$(date +%F)
-file="$journal_dir"/"$date"
+file="$journal_dir"/"$date.md"
+
+if [ ! -f "$file" ]; then
+  touch "$file"
+  echo "# $date\n\n## Log\n" >> "$file"
+fi
+
+$EDITOR "$file"
