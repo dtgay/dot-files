@@ -41,7 +41,7 @@ endif
 au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
 autocmd filetype markdown set syntax=markdown
 
-" By pressing F3, insert a bolded current time in 24 hour format, followed
+" By pressing F9, insert a bolded current time in 24 hour format, followed
 " by a hyphen, for beginning a log entry
 nnoremap <silent> <F9> i**<C-R>=strftime("%H:%M")<CR>** -
 inoremap <silent> <F9> **<C-R>=strftime("%H:%M")<CR>** - 
