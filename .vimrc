@@ -52,6 +52,8 @@ noremap <silent> ; :Files<CR>
 " notiational-fzf-vim config
 let g:nv_search_paths = ['~/Documents/Notes']
 noremap <silent> <F3> :NV<CR>
+vnoremap <silent> <F3> <C-C>:NV<CR>
+inoremap <silent> <F3> <C-O>:NV<CR>
 
 " Don't beep at me
 set vb
