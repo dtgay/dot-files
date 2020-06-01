@@ -48,6 +48,9 @@ inoremap <silent> <F9> **<C-R>=strftime("%H:%M")<CR>** -
 
 " fzf config
 noremap <silent> ; :Files<CR>
+noremap <silent> <F4> :Lines<CR>
+vnoremap <silent> <F4> <C-C>:Lines<CR>
+inoremap <silent> <F4> <C-O>:Lines<CR>
 
 " notiational-fzf-vim config
 let g:nv_search_paths = ['~/Documents/Notes']
