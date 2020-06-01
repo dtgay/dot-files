@@ -59,11 +59,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# colorls
-source $(dirname $(gem which colorls))/tab_complete.sh
-alias ls='colorls --sd'
-alias ll='colorls -lA --sd'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -73,3 +68,6 @@ alias ll='colorls -lA --sd'
 # git-fuzzy (powered by fzf)
 export PATH="/Users/david/Tools/git-fuzzy/bin:$PATH"
 alias gf="git fuzzy"
+
+# exa
+alias ls='exa'
