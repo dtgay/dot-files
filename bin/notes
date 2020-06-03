@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# PURPOSE:
+# Opens editor for purpose of using NV plugin, then saves changes to git repo.
+#
+# REQUIREMENTS:
+# $EDITOR must be set. Git must be installed.
+#
+# USAGE:
+# notes
+
+# abort on errors
+set -e
+
+$EDITOR && notescommit
