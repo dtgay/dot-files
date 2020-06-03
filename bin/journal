@@ -18,7 +18,9 @@ file="$journal_dir"/"$date.md"
 
 if [ ! -f "$file" ]; then
   touch "$file"
-  echo "# $date\n\n## Log\n" >> "$file"
+  echo "# $date\n\n## Log\n\n\n## Links" >> "$file"
 fi
+
+# TODO: Logic for opening file under the Log section if file is new.
 
 $EDITOR "$file"

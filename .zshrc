@@ -71,3 +71,4 @@ alias gf="git fuzzy"
 
 # exa
 alias ls='exa'
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
