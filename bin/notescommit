@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+# PURPOSE:
+# Updates all my note files in git.
+#
+# REQUIREMENTS:
+# Git.
+#
+# USAGE:
+# notecommit
+
+# abort on errors
+set -e
+
+notes_dir="/Users/david/Documents/Notes"
+
+echo "Adding changes to git..." \
+  && git -C "$notes_dir" add . \
+  && echo "Committing changes to git..." \
+  && git -C "$notes_dir" commit -m "Update"

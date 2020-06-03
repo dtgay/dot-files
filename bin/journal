@@ -4,14 +4,15 @@
 # Edits today's journal file and commits changes to the repo.
 #
 # REQUIREMENTS:
-# Vim must be installed.
+# $EDITOR must be set.
 #
 # USAGE:
-# ./journal-today.sh
+# journal
 
 # abort on errors
 set -e
 
+notes_dir="/Users/david/Documents/Notes"
 journal_dir="/Users/david/Documents/Notes/journal"
 date=$(date +%F)
 file="$journal_dir"/"$date.md"
@@ -21,6 +22,4 @@ if [ ! -f "$file" ]; then
   echo "# $date\n\n## Log\n\n\n## Links" >> "$file"
 fi
 
-# TODO: Logic for opening file under the Log section if file is new.
-
-$EDITOR "$file"
+$EDITOR "$file" && notescommit
