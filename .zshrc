@@ -49,6 +49,9 @@ bindkey -M vicmd '/' history-incremental-search-backward
 # Rbenv init
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# Cargo path
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
