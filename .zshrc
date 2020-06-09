@@ -69,7 +69,7 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # git-fuzzy (powered by fzf)
-export PATH="/Users/david/Tools/git-fuzzy/bin:$PATH"
+export PATH="/Users/david/tools/git-fuzzy/bin:$PATH"
 alias gf="git fuzzy"
 
 # exa
