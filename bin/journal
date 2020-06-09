@@ -19,7 +19,7 @@ file="$journal_dir"/"$date.md"
 
 if [ ! -f "$file" ]; then
   touch "$file"
-  echo "# $date\n\n## Log\n\n\n## Links" >> "$file"
+  echo "# $date\n\n## Log\n\n" >> "$file"
 fi
 
 $EDITOR "$file" && notescommit
