@@ -34,6 +34,14 @@ fi
 alias c='clear'
 alias ytdl='youtube-dl -x --audio-format mp3 --audio-quality 0'
 
+# Git aliases
+alias gcm='git checkout master'
+alias gcd='git checkout develop'
+alias gmm='git merge master'
+alias gmd='git merge develop'
+alias gpom='git push origin master'
+alias gpod='git push origin develop'
+
 # Move things to the trash rather than deleting them, and train
 # myself not to use rm. (requires rmtrash to be installed)
 alias del="trash"
