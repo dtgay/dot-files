@@ -47,7 +47,8 @@ alias gpod='git push origin develop'
 alias del="trash"
 alias rm="echo Use 'del' or '/bin/rm'"
 
-# Use nvim instead of vim
+# Use nvim instead of vi or vim
+alias vi="nvim"
 alias vim="nvim"
 
 # Use vi mode in the shell
