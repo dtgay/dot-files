@@ -96,7 +96,7 @@ set softtabstop=2
 set shiftwidth=2
 
 " Fenced code block syntax highlighting in md files
-let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'js=javascript', 'json=javascript']
+let g:markdown_fenced_languages = ['html', 'ruby', 'python', 'bash=sh', 'sh=sh', 'js=javascript', 'json=javascript']
 
 " START vim-plug
 call plug#begin()
